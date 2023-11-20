@@ -25,12 +25,10 @@ class Employee(Person):
     def Display(self):
         print(self.salary,self.name,self.age)
 
-
-
     
 
 s0=Student('Tejas',18,0,150)
-s1=Employee('',23,52000)
+s1=Employee('Deepika',23,52000)
 
 s0.Display()
 s1.Display()
