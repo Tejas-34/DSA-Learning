@@ -27,6 +27,13 @@ def merge(a,start,mid,end):
   for i in range(start, end+1):
     a[i] = merged[i]
 
+def mergeSort(a,start,end):
+  
+  if(start<end):
+    mid = (start+end)//2
+    mergeSort(a,start,mid)
+    mergeSort(a,mid+1,end)
+    merge(a,start,mid,end)
 
 
 #insertion sort algorithm
